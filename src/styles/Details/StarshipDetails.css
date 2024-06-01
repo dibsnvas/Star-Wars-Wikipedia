@@ -1,0 +1,81 @@
+/* styles/StarshipDetail.css */
+
+body {
+    background-color: black;
+    color: rgba(255, 187, 0, 0.906);
+    font-family: Arial, sans-serif;
+  }
+  
+  .starship-detail {
+    background-color: black;
+    color: rgba(255, 187, 0, 0.906);
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .starship-detail h2 {
+    color: rgba(255, 187, 0, 1);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  
+  .starship-detail p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .loader {
+    border: 8px solid rgba(255, 187, 0, 0.5);
+    border-top: 8px solid rgba(255, 187, 0, 1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .starship-card1 {
+    background-color: black;
+    border: 1px solid rgba(255, 187, 0, 0.906);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(255, 187, 0, 0.5);
+    max-width: 1300px;
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  .starship-card1 p {
+    margin-bottom: 10px;
+    color: rgba(255, 187, 0, 0.906);
+  }
+  
+  .starship-card1 p span {
+    color: rgba(255, 187, 0, 1);
+    font-weight: bold;
+  }
+  
+  .starship-card {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .starship-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(255, 187, 0, 0.7);
+  }
+  
+  .starship-card:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px rgba(255, 187, 0, 0.5);
+  }
+  
